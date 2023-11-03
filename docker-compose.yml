@@ -5,7 +5,7 @@ services:
     container_name: unifi-db
     volumes:
       - ./unifi-db/config:/data/db
-      - ./unifi-db/init-mongo.js:/docker-entrypoint-initdb.d/init-mongo.js:ro
+      - ./init-mongo.js:/docker-entrypoint-initdb.d/init-mongo.js:ro
     restart: unless-stopped
  
   unifi-network-application:
